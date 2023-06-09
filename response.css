@@ -320,6 +320,7 @@
   }
   #link_icons_container{
     width: 100%;
+    margin-top: 10px;
   }
   #link_icons_container div{
     width: 100%;
@@ -343,5 +344,27 @@
   }
   .arrow span{
     color: #008CBA;
+  }
+.responsive_mail span{
+  font-size: 32px;
+}
+  #contact-phone i{
+    font-size: 27px;
+  }
+  #contact-github div{
+    width: 90%;
+    margin-left: 2px;
+  }
+  .contact-left form .submit{
+    width: 100px;
+    background-color: #008CBA;
+    border: 1px solid #008CBA;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 18px;
+    font-weight: 600;
+    /* padding: 5px 10px; */
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.74);
   }
 }
