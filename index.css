@@ -258,7 +258,7 @@ button{
     transition: .1s;
     background-color: #005C7A;
 }
-.home_left #resume-button-2{
+.home_left #resume-link-2{
     width: 250px;
     position: relative;
     color: rgba(255, 255, 255, 0.74);
@@ -271,10 +271,10 @@ button{
     align-items: center;
     justify-content: space-between;
 }
-.home_left #resume-button-2 span{
+.home_left #resume-link-2 span{
     color: rgba(255, 255, 255, 0.74);
 }
-.home_left #resume-button-2:hover{
+.home_left #resume-link-2:hover{
     transition: .1s;
     background-color: #005C7A;
 }
