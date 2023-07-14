@@ -339,6 +339,9 @@ button{
     color: #008CBA;
     /* color: #676cdb; */
 }
+.about_top_right #user-detail-intro{
+    width: 78%;
+}
 .about_top_right p{
     color: #c2c5c9;
 }
