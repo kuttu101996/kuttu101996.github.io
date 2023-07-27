@@ -1,413 +1,604 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Font awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script
-        src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
-    </script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link
-    rel="stylesheet"
-    href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-    <link rel="stylesheet" href="index.css">
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+    />
     <title>Snehasish Ghosh Dastidar</title>
-    <link rel="icon" type="image/x-icon" href="./pics/icons8-backend-development.gif">
-    <link rel="stylesheet" href="response.css">
-    <link rel="stylesheet" href="nam.css">
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./pics/icons8-backend-development.gif"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="response.css" />
+    <link rel="stylesheet" href="nam.css" />
+  </head>
+  <body>
     <div class="all">
-        <nav id="nav-menu">
-            <div id="burger">
-                <i class="fa-solid fa-burger"></i>
-            </div>
-            <!-- <div class="logo">
+      <nav id="nav-menu">
+        <div id="burger">
+          <i class="fa-solid fa-burger"></i>
+        </div>
+        <!-- <div class="logo">
                 <img src="./img/sgd.png" alt="">
                 <img src="./img/fullName.png" alt="">
             </div> -->
-            <!-- <div class="logo">
+        <!-- <div class="logo">
                 <a href="#home"><h1>SNEHASISH</h1></a>
             </div> -->
-            <div class="nav_right">
-                <a class="nav_btns nav-link home" href="#home">Home</a>
-                <a class="nav_btns nav-link about" href="#about">About</a>
-                <a class="nav_btns nav-link skills" href="#skills">Skills</a>
-                <a class="nav_btns nav-link projects" href="#projects">Projects</a>
-                <a class="nav_btns nav-link contact" href="#contact">Contact</a>
-                <a class="nav_btns nav-link resume resumeBtn" id="resume-link-1" onclick="dis()" href="./pdf/Snehasish.Ghosh.Dastidar.resume.pdf" download="">
-                    <span id="resume-button-1">Resume</span><span class="material-symbols-outlined">
-                        download
-                    </span>
-                </a>
-            </div>
-        </nav>
-        <div id="toggle_navPageFull" class="toggle_navPageFull">
-            <div id="toggle_navPageHalf" class="toggle_navPageHalf">
-                <div  class="toggle_navPage_links">
-                    <a class="" href="#home" onclick="clo()">Home</a>
-                </div>
-                <div  class="toggle_navPage_links">
-                    <a class="" href="#about" onclick="clo()">About</a>
-                </div>
-                <div  class="toggle_navPage_links">
-                    <a class="" href="#skills" onclick="clo()">Skills</a>
-                </div>
-                <div  class="toggle_navPage_links">
-                    <a class="" href="#projects" onclick="clo()">Projects</a>
-                </div>
-                <div  class="toggle_navPage_links">
-                    <a class="" href="#contact" onclick="clo()">Contact</a>
-                </div>
-                <div class="toggle_navPage_links">
-                    <a class="" id="resume-link-1" href="./pdf/Snehasish-Dastidar-resume.pdf" download=""><span id="resume-button-1">Resume</span><span class="material-symbols-outlined">
-                            download
-                        </span>
-                    </a>
-                </div>
-            </div>
-            <div id="close" class="closeParent">
-                <div id="clo">
-                    <span class="material-symbols-outlined">
-                        close
-                        </span>
-                </div>
-            </div>
+        <div class="nav_right">
+          <a class="nav_btns nav-link home" href="#home">Home</a>
+          <a class="nav_btns nav-link about" href="#about">About</a>
+          <a class="nav_btns nav-link skills" href="#skills">Skills</a>
+          <a class="nav_btns nav-link projects" href="#projects">Projects</a>
+          <a class="nav_btns nav-link contact" href="#contact">Contact</a>
+          <a
+            class="nav_btns nav-link resume resumeBtn"
+            id="resume-link-1"
+            onclick="dis()"
+            href="./pdf/Snehasish.Ghosh.Dastidar.resume.pdf"
+            target="_blank"
+            download=""
+          >
+            <span id="resume-button-1">Resume</span
+            ><span class="material-symbols-outlined"> download </span>
+          </a>
         </div>
-        <div id="particles-js"></div>
-        <div id="home" class="section">
-            <div class="home_left">
-                <!-- Namaste -->
-                <h1 class="namaste">HI, I am </h1>
-                <h1 class="my_name"><span id="user-detail-name">Snehasish Ghosh Dastidar</span></h1> <!-- Bcak-End Node Developer -->
+      </nav>
+      <div id="toggle_navPageFull" class="toggle_navPageFull">
+        <div id="toggle_navPageHalf" class="toggle_navPageHalf">
+          <div class="toggle_navPage_links">
+            <a class="" href="#home" onclick="clo()">Home</a>
+          </div>
+          <div class="toggle_navPage_links">
+            <a class="" href="#about" onclick="clo()">About</a>
+          </div>
+          <div class="toggle_navPage_links">
+            <a class="" href="#skills" onclick="clo()">Skills</a>
+          </div>
+          <div class="toggle_navPage_links">
+            <a class="" href="#projects" onclick="clo()">Projects</a>
+          </div>
+          <div class="toggle_navPage_links">
+            <a class="" href="#contact" onclick="clo()">Contact</a>
+          </div>
+          <div class="toggle_navPage_links">
+            <a
+              class=""
+              id="resume-link-1"
+              href="./pdf/Snehasish-Dastidar-resume.pdf"
+              download=""
+              ><span id="resume-button-1">Resume</span
+              ><span class="material-symbols-outlined"> download </span>
+            </a>
+          </div>
+        </div>
+        <div id="close" class="closeParent">
+          <div id="clo">
+            <span class="material-symbols-outlined"> close </span>
+          </div>
+        </div>
+      </div>
+      <div id="particles-js"></div>
+      <div id="home" class="section">
+        <div class="home_left">
+          <!-- Namaste -->
+          <h1 class="namaste">HI, I am</h1>
+          <h1 class="my_name">
+            <span id="user-detail-name">Snehasish Ghosh Dastidar</span>
+          </h1>
+          <!-- Bcak-End Node Developer -->
 
-                <div class="container">
-                    <span>A</span>
-                    <span>&nbsp;P</span>
-                    <span>r</span>
-                    <span>o</span>
-                    <span>b</span>
-                    <span>l</span>
-                    <span>e</span>
-                    <span>m</span>
-                    <span>&nbsp;S</span>
-                    <span>o</span>
-                    <span>l</span>
-                    <span>v</span>
-                    <span>e</span>
-                    <span>r</span>
-                </div>
-                <!-- <p >A Passionate Back-End Node Developer Based in West Bengal, India. ---------- This is my Official portfolio website, <br> It contains all proffesional necessary details about me.</p> -->
-                
-                <!-- id="user-detail-intro" -->
-                <!-- <a href=""><img class="social1" src="https://i.pinimg.com/236x/49/32/80/49328097f84b5b6d80ffe0c104e4f429.jpg" alt=""></a> -->
-                <!-- <a href=""><img class="social2" src="https://i.pinimg.com/236x/62/59/a9/6259a9e2bcd1999d56211f299e99dcad.jpg" alt=""></a> -->
-                <!-- <i class="fa-brands fa-square-github"></i> -->
-                <!-- <i class="fa-brands fa-github"></i> -->
-                <p>A Passionate full stack developer Based in West Bengal, India. With expertise in front-end technologies like React and back-end skills in Node.js and databases such as MySQL and MongoDB. <span class="mob_none"> I thrive in agile environments, collaborating closely with teams to deliver seamless integrations.</span> Continuous learning is integral to my growth<span class="mob_none">, my goal is to deliver high-quality solutions that exceed expectations and drive business success</span>.</p>
-                <a id="resume-link-2" class="resume resumeBtn" href="./pdf/Snehasish-Dastidar-resume.pdf" download="">
-                    Download Resume
-                    <!-- <span id="resume-button-2-mobile">Resume<span class="material-symbols-outlined">download</span></span>
-                    <span id="resume-button-2">Download Resume<span class="material-symbols-outlined">download</span></span> -->
-                </a>
-                </div>
-            <div class="home_right">
-                <img class="home-img" src="https://i.pinimg.com/originals/16/fe/7e/16fe7e7fb6eebb3087b6dc418748ee56.gif" alt="">
-            </div>
+          <div class="container">
+            <span>A</span>
+            <span>&nbsp;P</span>
+            <span>r</span>
+            <span>o</span>
+            <span>b</span>
+            <span>l</span>
+            <span>e</span>
+            <span>m</span>
+            <span>&nbsp;S</span>
+            <span>o</span>
+            <span>l</span>
+            <span>v</span>
+            <span>e</span>
+            <span>r</span>
+          </div>
+          <p>
+            A Passionate full stack developer Based in West Bengal, India. With
+            expertise in front-end technologies like React and back-end skills
+            in Node.js and databases such as MySQL and MongoDB.
+            <span class="mob_none">
+              I thrive in agile environments, collaborating closely with teams
+              to deliver seamless integrations.</span
+            >
+            Continuous learning is integral to my growth<span class="mob_none"
+              >, my goal is to deliver high-quality solutions that exceed
+              expectations and drive business success</span
+            >.
+          </p>
+          <a
+            id="resume-link-2"
+            class="resume resumeBtn"
+            href="./pdf/Snehasish-Dastidar-resume.pdf"
+            target="_blank"
+          >
+            Resume<span class="material-symbols-outlined">download</span>
+          </a>
         </div>
-        <div id="about" class="about section">
-            <h2 class="secHead gg">About</h2>
-            <div class="about_top">
-                <div id="intro">
-                    <div>
-                        <p >
-                            An aspiring web developer, a lifelong learner, skilled in
-                            front-end and back-end web development and passionate about
-                            creating responsive and user-friendly websites. Eager to begin
-                            career as a web developer.Currently learing CSS,
-                            JavaScript,React,HTML,Chakra UI, Nodejs.
-                        </p>
-                        <!-- <h3>Masai School, Bangalore</h3>
-                        <p>Full Stack Web Development (Full Time)</p>
-                        <p>September 2022 - Present (Remote)</p> -->
-                    </div>
-                    <!-- <p>--------</p> -->
-                    <!-- <div>
-                        <h3>Bangabasi College Of Commerce</h3>
-                        <p>Bachelor of Commerce (B.Com)</p>
-                        <p>June 2014 - June 2017</p>
-                    </div> -->
-                </div>
-                <div class="about_top_left">
-                    <!-- id="top-lang-img" -->
-                    <p  src=""><img  id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kuttu101996&layout=compact&theme=github_dark" alt=""></p> 
-                    
-                    <!-- id="git-stat-card" -->
-                    <p  src=""><img id="github-stats-card" text-align="center" src="https://github-readme-stats.vercel.app/api?username=kuttu101996&show_icons=true&locale=en&&theme=github_dark" alt="kuttu101996" /></p>
-                </div>
-                <div class="about_top_right">
-                    <!-- <div id="user-detail-intro"> -->
-                        <div>
-                            <p id="user-detail-intro">
-                                An aspiring web developer, a lifelong learner, skilled in
-                            front-end and back-end web development and passionate about
-                            creating responsive and user-friendly websites. Eager to begin
-                            career as a web developer. Currently learing CSS,
-                            JavaScript, React, HTML, Chakra UI, Nodejs.
-                            </p>
-                            <!-- <h3>Masai School, Bangalore</h3>
+        <div class="home_right">
+          <img
+            class="home-img"
+            src="https://i.pinimg.com/originals/16/fe/7e/16fe7e7fb6eebb3087b6dc418748ee56.gif"
+            alt=""
+          />
+        </div>
+      </div>
+      <div id="about" class="about section">
+        <h2 class="secHead gg">About</h2>
+        <div class="about_top">
+          <div class="about_top_left">
+            <p>
+              <img
+                id="github-top-langs"
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=kuttu101996&layout=compact&theme=github_dark"
+                alt=""
+              />
+            </p>
+            <p>
+              <img
+                id="github-stats-card"
+                text-align="center"
+                src="https://github-readme-stats.vercel.app/api?username=kuttu101996&show_icons=true&locale=en&&theme=github_dark"
+                alt="kuttu101996"
+              />
+            </p>
+          </div>
+          <div class="about_top_right">
+            <!-- <div id="user-detail-intro"> -->
+            <div>
+              <p id="user-detail-intro">
+                An aspiring web developer, a lifelong learner, skilled in
+                front-end and back-end web development and passionate about
+                creating responsive and user-friendly websites. Eager to begin
+                career as a web developer. Currently learing CSS, JavaScript,
+                React, HTML, Chakra UI, Nodejs.
+              </p>
+              <!-- <h3>Masai School, Bangalore</h3>
                             <p>Full Stack Web Development (Full Time)</p>
                             <p>September 2022 - Present (Remote)</p> -->
-                        </div>
-                        <!-- <p>--------</p>
+            </div>
+            <!-- <p>--------</p>
                         <div>
                             <h3>Bangabasi College Of Commerce</h3>
                             <p>Bachelor of Commerce (B.Com)</p>
                             <p>June 2014 - June 2016</p>
                         </div> -->
-                    <!-- </div> -->
-                    <div class="about_top_right_ch2">
-                        <p  float="left" text-align="center">
-                            <!-- id="git-readme" -->
-                            <img id="github-streak-stats"  src="https://github-readme-streak-stats.herokuapp.com?user=kuttu101996&theme=github-dark-blue&type=png" alt=""> 
-                        </p> 
-                        <!-- <img style="width: 500px; height: 200px;" src="https://github-readme-activity-graph.cyclic.app/graph?username=kuttu101996&theme=tokyo-night"> -->
-                    </div>
-                </div>
+            <!-- </div> -->
+            <div class="about_top_right_ch2">
+              <p float="left" text-align="center">
+                <!-- id="git-readme" -->
+                <img
+                  id="github-streak-stats"
+                  src="https://github-readme-streak-stats.herokuapp.com?user=kuttu101996&theme=github-dark-blue&type=png"
+                  alt=""
+                />
+              </p>
             </div>
-            <div class="about_bottom">
-                <h2 class="secHead gg">Github Graph</h2>
-                <div  class="calendar react-activity-calendar" src="">
-                    <img  src="" alt="">
-                    <div class="calendar"></div>
-                </div>
-            </div>
-
-
-            <!-- <div class="about_main">
-                <div class="about_left">
-                    <img src="https://i.pinimg.com/originals/16/fe/7e/16fe7e7fb6eebb3087b6dc418748ee56.gif" alt="">
-                </div>
-                <div class="about_right">
-                    <h3 class="secHead">About Me</h3>
-                    <h2>A Dedicated Backend Node Developer based in Kolkata, India</h2>
-                    <p>
-                        Passionate about crafting elegant and efficient solutions, I strive to constantly improve my skills and tackle complex problems in the back-end development space. As a fresher, I am eager to apply my knowledge and learn from experienced professionals, and contribute to the development of innovative and impactful software solutions.
-                    </p>
-                    <br>
-                    <p>
-                        Coding is not just a job for me, it's a creative outlet where I can turn my ideas into reality. I am committed to writing clean, maintainable code that delivers optimal performance and scalability. With a strong foundation in programming principles and a thirst for knowledge, I am excited to take on new challenges and explore the limitless possibilities of back-end development.
-                    </p>
-                </div>
-            </div> -->
-
-            <!-- <p><img text-align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=kuttu101996&show_icons=true&locale=en&layout=compact" alt="kuttu101996" /></p>  -->
+          </div>
         </div>
-        <div id="skills" class="section">
-            <h1 class="secHead">SKILLS</h1>
-            <div class="skill_main">
-                <div class="skill_icons skills-card">
-                    <img class="skills-card-img" src="./skills/html.png" alt="HTML">
-                    <h3 class="skills-card-name">HTML</h3>
-                </div>
-                <div class="skill_icons skills-card">
-                    <img class="skills-card-img" src="./skills/css-3.png" alt="CSS">
-                    <h3 class="skills-card-name">CSS</h3>
-                </div>
-                <div class="skill_icons skills-card">
-                    <img class="skills-card-img" src="./skills/js.png" alt="JavaScript">
-                    <h3 class="skills-card-name">JavaScript</h3>
-                </div>
-                <div class="skill_icons skills-card">
-                    <img class="skills-card-img" src="./skills/node-js.png" alt="NodeJS">
-                    <h3 class="skills-card-name">NodeJS</h3>
-                </div>
-                <div class="skill_icons skills-card">
-                    <img class="skills-card-img" src="./skills/mongodb.png" alt="MongoDB">
-                    <h3 class="skills-card-name">MongoDB</h3>
-                </div>
-                <div class="skill_icons skills-card">
-                    <img class="skills-card-img" src="./skills/redis.png" alt="Redis">
-                    <h3 class="skills-card-name">Redis</h3>
-                </div>
-                <div class="skill_icons skills-card">
-                    <img class="skills-card-img" src="./skills/socket.png" alt="Redis">
-                    <h3 class="skills-card-name">Socket.io</h3>
-                </div>
-                <div class="skill_icons skills-card">
-                    <img class="skills-card-img" src="./skills/aws.png" alt="Redis">
-                    <h3 class="skills-card-name">AWS</h3>
-                </div>
-                <div class="skill_icons skills-card">
-                    <img class="skills-card-img" src="./skills/TS.png" alt="Redis">
-                    <h3 class="skills-card-name">TypeScript</h3>
-                </div>
-                <div class="skill_icons skills-card">
-                    <img class="skills-card-img" src="./skills/react-original-wordmark.svg" alt="HTML">
-                    <h3 class="skills-card-name">React</h3>
-                </div>
-            </div>
+        <div class="about_bottom">
+          <h2 class="secHead gg">Github Graph</h2>
+          <div class="calendar react-activity-calendar" src="">
+            <img src="" alt="" />
+            <div class="calendar"></div>
+          </div>
         </div>
-        <div id="projects" class="section">
-            <h1 class="secHead secHead_proj">PROJECTS</h1>
-            <div class="project_main">
-                <div class="project-card proj1">
-                    <div class="left one">
-                        <a href="https://luminous-quokka-31cf99.netlify.app/" target="_blank"><img src="./pics/pEasy.PNG" alt=""></a>
-                    </div>
-                    <div class="overlay">
-                        <h3 class="project-title">Sushrut &nbsp;|&nbsp; PharmEasy Clone</h3>
-                        <p class="project-description">Clone of PharmEasy, a online medicine shop </p>
-                        <div class="project-tech-stack">
-                            <img src="./skills/html.png" alt="">
-                            <img src="./skills/css-3.png" alt="">
-                            <img src="./skills/js.png" alt="">
-                        </div> 
-                        <div class="proj_link_div">
-                            <a class="proj_links project-github-link" href="https://github.com/kuttu101996/evil-zinc-6643" target="_blank"><i class="fa-brands fa-github"></i><span>Github</span></a>
-                            <a class="proj_links project-deployed-link" href="https://luminous-quokka-31cf99.netlify.app/" target="_blank"><i class="fa-solid fa-globe"></i><span>Live</span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card proj1">
-                    <div class="left one">
-                        <a href="https://venerable-froyo-501160.netlify.app/" target="_blank"><img src="./pics/ghumocar.PNG" alt=""></a>
-                    </div>
-                    <div class="overlay">
-                        <h3 class="project-title">GhumoCar &nbsp;|&nbsp; Avis.co.in</h3>
-                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, eaque! Lorem ipsum</p>
-                        <div class="project-tech-stack">
-                            <img src="./skills/html.png" alt="">
-                            <img src="./skills/css-3.png" alt="">
-                            <img src="./skills/js.png" alt="">
-                        </div> 
-                        <div class="proj_link_div">
-                            <a class="proj_links project-github-link" href="https://github.com/kuttu101996/hardy-cook-3008" target="_blank"><i class="fa-brands fa-github"></i><span>Github</span></a>
-                            <a class="proj_links project-deployed-link" href="https://venerable-froyo-501160.netlify.app/" target="_blank"><i class="fa-solid fa-globe"></i><span>Live</span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card proj1">
-                    <div class="left one">
-                        <a href="https://spontaneous-muffin-8249c6.netlify.app/" target="_blank"><img src="./pics/wigi final.PNG" alt=""></a>
-                    </div>
-                    <div class="overlay">
-                        <h3 class="project-title">Wigi (Want It Get It) &nbsp;|&nbsp; Lyst.com</h3>
-                        <p class="project-description">It's a clone of Lyst.com, a Fashion collection hub for top Brands</p>
-                        <div class="project-tech-stack wigi">
-                            <img src="./skills/html.png" alt="">
-                            <img src="./skills/css-3.png" alt="">
-                            <img src="./skills/js.png" alt="">
-                            <img src="./skills/node-js.png" alt="">
-                            <img src="./skills/mongodb.png" alt="">
-                        </div> 
-                        <div class="proj_link_div">
-                            <a class="proj_links project-github-link" href="https://github.com/kuttu101996/smoggy-porter-7714" target="_blank"><i class="fa-brands fa-github"></i><span>Github</span></a>
-                            <a class="proj_links project-deployed-link" href="https://spontaneous-muffin-8249c6.netlify.app/" target="_blank"><i class="fa-solid fa-globe"></i><span>Live</span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card proj1">
-                    <div class="left one">
-                        <a href="https://the-budget-buddy.netlify.app" target="_blank"><img src="./pics/BB.png" alt=""></a>
-                    </div>
-                    <div class="overlay">
-                        <h3 class="project-title">Budget Buddy</h3>
-                        <p class="project-description">A Budget tracking Application.</p>
-                        <div class="project-tech-stack wigi">
-                            <img src="./skills/html.png" alt="">
-                            <img src="./skills/css-3.png" alt="">
-                            <img src="./skills/js.png" alt="">
-                            <img src="./skills/node-js.png" alt="">
-                            <img src="./skills/mongodb.png" alt="">
-                        </div> 
-                        <div class="proj_link_div">
-                            <a class="proj_links project-github-link" href="https://github.com/kuttu101996/evil-zinc-6643" target="_blank"><i class="fa-brands fa-github"></i><span>Github</span></a>
-                            <a class="proj_links project-deployed-link" href="https://the-budget-buddy.netlify.app" target="_blank"><i class="fa-solid fa-globe"></i><span>Live</span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div id="skills" class="section">
+        <h1 class="secHead">SKILLS</h1>
+        <div class="skill_main">
+          <div class="skill_icons skills-card">
+            <img class="skills-card-img" src="./skills/html.png" alt="HTML" />
+            <h3 class="skills-card-name">HTML</h3>
+          </div>
+          <div class="skill_icons skills-card">
+            <img class="skills-card-img" src="./skills/css-3.png" alt="CSS" />
+            <h3 class="skills-card-name">CSS</h3>
+          </div>
+          <div class="skill_icons skills-card">
+            <img
+              class="skills-card-img"
+              src="./skills/js.png"
+              alt="JavaScript"
+            />
+            <h3 class="skills-card-name">JavaScript</h3>
+          </div>
+          <div class="skill_icons skills-card">
+            <img
+              class="skills-card-img"
+              src="./skills/node-js.png"
+              alt="NodeJS"
+            />
+            <h3 class="skills-card-name">NodeJS</h3>
+          </div>
+          <div class="skill_icons skills-card">
+            <img
+              class="skills-card-img"
+              src="./skills/mongodb.png"
+              alt="MongoDB"
+            />
+            <h3 class="skills-card-name">MongoDB</h3>
+          </div>
+          <div class="skill_icons skills-card">
+            <img class="skills-card-img" src="./skills/redis.png" alt="Redis" />
+            <h3 class="skills-card-name">Redis</h3>
+          </div>
+          <div class="skill_icons skills-card">
+            <img
+              class="skills-card-img"
+              src="./skills/socket.png"
+              alt="Socket.io"
+            />
+            <h3 class="skills-card-name">Socket.io</h3>
+          </div>
+          <div class="skill_icons skills-card">
+            <img
+              class="skills-card-img MySQL"
+              src="./skills/sql.png"
+              alt="MySQL"
+            />
+            <h3 class="skills-card-name">MySQL</h3>
+          </div>
+          <div class="skill_icons skills-card">
+            <img class="skills-card-img" src="./skills/aws.png" alt="AWS" />
+            <h3 class="skills-card-name">AWS</h3>
+          </div>
+          <div class="skill_icons skills-card">
+            <img
+              class="skills-card-img"
+              src="./skills/TS.png"
+              alt="TypeScript"
+            />
+            <h3 class="skills-card-name">TypeScript</h3>
+          </div>
+          <div class="skill_icons skills-card">
+            <img
+              class="skills-card-img"
+              src="./skills/react-original-wordmark.svg"
+              alt="React"
+            />
+            <h3 class="skills-card-name">React</h3>
+          </div>
+          <div class="skill_icons skills-card">
+            <img
+              class="skills-card-img"
+              src="./skills/github_white.png"
+              alt="Github"
+            />
+            <h3 class="skills-card-name">Github</h3>
+          </div>
         </div>
-        <div id="contact" class="section">
-            <h1 class="secHead">CONTACT</h1>
-            <!-- <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3687.1123868828445!2d88.36863087400657!3d22.462410579570342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0271a8daaaaaab%3A0x9efc9b78a7462c3d!2sMilan%20Chakra%20Club%20%26%20Playground!5e0!3m2!1sen!2sin!4v1684347962761!5m2!1sen!2sin" width="100%" height="80%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div> -->
-            <div class="contact_main">
-                <div class="contact-left">
-                    <form>
-                        <input class="inputs" type="text" placeholder="Enter Your Name" required>
-                        <input class="inputs" type="email" placeholder="Enter Your Email" required>
-                        <textarea class="inputs" placeholder="Your Message Here" cols="50" rows="5"></textarea>
-                        <input class="inputs submit" type="submit" value="SEND">
-                    </form>
-                </div>
-                <div id="responsive_social" class="responsive_social">
-                    <div>
-                        <p class="social">Social Links</p>
-                    </div>
-                    <div id="arrow_left_id" class="arrow">
-                        <span id="left_arrow" class="material-symbols-outlined">
-                        keyboard_double_arrow_left
-                        </span>
-                    </div>
-                    <div id="arrow_right_id" class="arrow">
-                        <span id="right_arrow" class="material-symbols-outlined">
-                            double_arrow
-                            </span>
-                    </div>
-                    <div id="link_icons_container">
-                        <!-- <a id="contact-email" class="social_links" href="mailto:snehasishgd10@gmail.com" target="_blank"><div>snehasishgd10@gmail.com</div></a> -->
+      </div>
+      <div id="projects" class="section">
+        <h1 class="secHead secHead_proj">PROJECTS</h1>
+        <div class="project_main">
+          <div class="project-card proj1">
+            <div class="left one">
+              <a
+                href="https://luminous-quokka-31cf99.netlify.app/"
+                target="_blank"
+                ><img src="./pics/pEasy.PNG" alt=""
+              /></a>
+            </div>
+            <div class="overlay">
+              <h3 class="project-title">
+                Sushrut &nbsp;|&nbsp; PharmEasy Clone
+              </h3>
+              <p class="project-description">
+                Clone of PharmEasy, a online medicine shop
+              </p>
+              <div class="project-tech-stack">
+                <img src="./skills/html.png" alt="" />
+                <img src="./skills/css-3.png" alt="" />
+                <img src="./skills/js.png" alt="" />
+              </div>
+              <div class="proj_link_div">
+                <a
+                  class="proj_links project-github-link"
+                  href="https://github.com/kuttu101996/evil-zinc-6643"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i><span>Github</span></a
+                >
+                <a
+                  class="proj_links project-deployed-link"
+                  href="https://luminous-quokka-31cf99.netlify.app/"
+                  target="_blank"
+                  ><i class="fa-solid fa-globe"></i><span>Live</span></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-card proj1">
+            <div class="left one">
+              <a
+                href="https://venerable-froyo-501160.netlify.app/"
+                target="_blank"
+                ><img src="./pics/ghumocar.PNG" alt=""
+              /></a>
+            </div>
+            <div class="overlay">
+              <h3 class="project-title">GhumoCar &nbsp;|&nbsp; Avis.co.in</h3>
+              <p class="project-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                eaque! Lorem ipsum
+              </p>
+              <div class="project-tech-stack">
+                <img src="./skills/html.png" alt="" />
+                <img src="./skills/css-3.png" alt="" />
+                <img src="./skills/js.png" alt="" />
+              </div>
+              <div class="proj_link_div">
+                <a
+                  class="proj_links project-github-link"
+                  href="https://github.com/kuttu101996/hardy-cook-3008"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i><span>Github</span></a
+                >
+                <a
+                  class="proj_links project-deployed-link"
+                  href="https://venerable-froyo-501160.netlify.app/"
+                  target="_blank"
+                  ><i class="fa-solid fa-globe"></i><span>Live</span></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-card proj1">
+            <div class="left one">
+              <a
+                href="https://spontaneous-muffin-8249c6.netlify.app/"
+                target="_blank"
+                ><img src="./pics/wigi final.PNG" alt=""
+              /></a>
+            </div>
+            <div class="overlay">
+              <h3 class="project-title">
+                Wigi (Want It Get It) &nbsp;|&nbsp; Lyst.com
+              </h3>
+              <p class="project-description">
+                It's a clone of Lyst.com, a Fashion collection hub for top
+                Brands
+              </p>
+              <div class="project-tech-stack wigi">
+                <img src="./skills/html.png" alt="" />
+                <img src="./skills/css-3.png" alt="" />
+                <img src="./skills/js.png" alt="" />
+                <img src="./skills/node-js.png" alt="" />
+                <img src="./skills/mongodb.png" alt="" />
+              </div>
+              <div class="proj_link_div">
+                <a
+                  class="proj_links project-github-link"
+                  href="https://github.com/kuttu101996/smoggy-porter-7714"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i><span>Github</span></a
+                >
+                <a
+                  class="proj_links project-deployed-link"
+                  href="https://spontaneous-muffin-8249c6.netlify.app/"
+                  target="_blank"
+                  ><i class="fa-solid fa-globe"></i><span>Live</span></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-card proj1">
+            <div class="left one">
+              <a href="https://the-budget-buddy.netlify.app" target="_blank"
+                ><img src="./pics/BB.png" alt=""
+              /></a>
+            </div>
+            <div class="overlay">
+              <h3 class="project-title">Budget Buddy</h3>
+              <p class="project-description">A Budget tracking Application.</p>
+              <div class="project-tech-stack wigi">
+                <img src="./skills/html.png" alt="" />
+                <img src="./skills/css-3.png" alt="" />
+                <img src="./skills/js.png" alt="" />
+                <img src="./skills/node-js.png" alt="" />
+                <img src="./skills/mongodb.png" alt="" />
+              </div>
+              <div class="proj_link_div">
+                <a
+                  class="proj_links project-github-link"
+                  href="https://github.com/kuttu101996/evil-zinc-6643"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i><span>Github</span></a
+                >
+                <a
+                  class="proj_links project-deployed-link"
+                  href="https://the-budget-buddy.netlify.app"
+                  target="_blank"
+                  ><i class="fa-solid fa-globe"></i><span>Live</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="contact" class="section">
+        <h1 class="secHead">CONTACT</h1>
+        <div class="contact_main">
+          <div class="contact-left">
+            <form>
+              <input
+                class="inputs"
+                type="text"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                class="inputs"
+                type="email"
+                placeholder="Your Email"
+                required
+              />
+              <input
+                class="inputs"
+                type="number"
+                placeholder="Your Mobile"
+                required
+              />
+              <textarea
+                class="inputs"
+                placeholder="Your Message Here"
+                cols="50"
+                rows="4"
+              ></textarea>
+              <input class="inputs submit" type="submit" value="SEND" />
+            </form>
+          </div>
+          <div id="responsive_social" class="responsive_social">
+            <div>
+              <p class="social">Social Links</p>
+            </div>
+            <div id="arrow_left_id" class="arrow">
+              <span id="left_arrow" class="material-symbols-outlined">
+                keyboard_double_arrow_left
+              </span>
+            </div>
+            <div id="arrow_right_id" class="arrow">
+              <span id="right_arrow" class="material-symbols-outlined">
+                double_arrow
+              </span>
+            </div>
+            <div id="link_icons_container">
+              <!-- <a id="contact-email" class="social_links" href="mailto:snehasishgd10@gmail.com" target="_blank"><div>snehasishgd10@gmail.com</div></a> -->
 
-                        <a class="responsive_mail" href="mailto:snehasishgd10@gmail.com" target="_blank"><div><span class="material-symbols-outlined">
-                            mail
-                            </span></div></a>
+              <a
+                class="responsive_mail"
+                href="mailto:snehasishgd10@gmail.com"
+                target="_blank"
+                ><div>
+                  <span class="material-symbols-outlined"> mail </span>
+                </div></a
+              >
 
-                        <a id="contact-github" class="social_links" target="_blank" href="https://github.com/kuttu101996"><div><img class="githubImg" src="./skills/GitHub-Mark.png" alt=""></div></a>
-                        
-                        <a id="contact-linkedin" class="social_links" href="https://www.linkedin.com/in/snehasish10/" target="_blank"><div><img class="linkedinImg" src="./skills/—Pngtree—linkedin creative icon_3562039.png" alt=""></div></a>
-                        
-                        <a id="contact-phone" class="social_links" target="_blank" href=""><div><i class="fa-solid fa-phone ph_icon"></i></div></a>
-                        <!-- <i class="fa-solid fa-phone"></i>
+              <a
+                id="contact-github"
+                class="social_links"
+                target="_blank"
+                href="https://github.com/kuttu101996"
+                ><div>
+                  <img
+                    class="githubImg"
+                    src="./skills/GitHub-Mark.png"
+                    alt=""
+                  /></div
+              ></a>
+
+              <a
+                id="contact-linkedin"
+                class="social_links"
+                href="https://www.linkedin.com/in/snehasish10/"
+                target="_blank"
+                ><div>
+                  <img
+                    class="linkedinImg"
+                    src="./skills/—Pngtree—linkedin creative icon_3562039.png"
+                    alt=""
+                  /></div
+              ></a>
+
+              <a id="contact-phone" class="social_links" target="_blank" href=""
+                ><div><i class="fa-solid fa-phone ph_icon"></i></div
+              ></a>
+              <!-- <i class="fa-solid fa-phone"></i>
                         <img src="./skills/linkedin.png" alt="">
                         <div><img src="./skills/GitHub-Mark.png" alt=""></div>
                         <div><img src="./skills/—Pngtree—linkedin creative icon_3562039.png" alt=""></div>
                         <div></div>
                         <div></div>
                         <div></div> -->
-                    </div>
-                </div>
-                <div id="contact_right" class="contact-right">
-                    <!-- <h2>Social Links</h2> -->
-                    <a id="contact-email" class="social_links" href="mailto:snehasishgd10@gmail.com" target="_blank"><div>snehasishgd10@gmail.com</div></a>
-
-                    <a id="contact-github" class="social_links" target="_blank" href="https://github.com/kuttu101996"><div><img class="githubImg" src="./skills/GitHub-Mark.png" alt=""> Github</div></a>
-                    
-                    <a id="contact-linkedin" class="social_links" href="https://www.linkedin.com/in/snehasish10/" target="_blank"><div><img class="linkedinImg" src="./skills/—Pngtree—linkedin creative icon_3562039.png" alt=""> LinkedIn</div></a>
-                    
-                    <a id="contact-phone" class="social_links" target="_blank" href=""><div><i class="fa-solid fa-phone"></i> +91 85830 26070</div></a>
-                </div>
             </div>
+          </div>
+          <div id="contact_right" class="contact-right">
+            <!-- <h2>Social Links</h2> -->
+            <a
+              id="contact-email"
+              class="social_links"
+              href="mailto:snehasishgd10@gmail.com"
+              target="_blank"
+              ><div>snehasishgd10@gmail.com</div></a
+            >
+
+            <a
+              id="contact-github"
+              class="social_links"
+              target="_blank"
+              href="https://github.com/kuttu101996"
+              ><div>
+                <img class="githubImg" src="./skills/GitHub-Mark.png" alt="" />
+                Github
+              </div></a
+            >
+
+            <a
+              id="contact-linkedin"
+              class="social_links"
+              href="https://www.linkedin.com/in/snehasish10/"
+              target="_blank"
+              ><div>
+                <img
+                  class="linkedinImg"
+                  src="./skills/—Pngtree—linkedin creative icon_3562039.png"
+                  alt=""
+                />
+                LinkedIn
+              </div></a
+            >
+
+            <a id="contact-phone" class="social_links" target="_blank" href=""
+              ><div><i class="fa-solid fa-phone"></i> +91 85830 26070</div></a
+            >
+          </div>
         </div>
+      </div>
     </div>
 
-<script src="particles.js"></script>
-<script src="app.js"></script>
-<script>
-    // GitHubCalendar(".calendar", "kuttu101996");
-    GitHubCalendar(".calendar", "kuttu101996", { responsive: true });
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+    <script>
+      // GitHubCalendar(".calendar", "kuttu101996");
+      GitHubCalendar(".calendar", "kuttu101996", { responsive: true });
 
-    // Use a proxy
-    GitHubCalendar(".calendar", "kuttu101996", {
-       proxy (kuttu101996) {
-         return fetch(`https://your-proxy.com/github?user=${kuttu101996}`)
-       }
-    })
-</script>
-</body>
-<script src="index.js"></script>
+      // Use a proxy
+      GitHubCalendar(".calendar", "kuttu101996", {
+        proxy(kuttu101996) {
+          return fetch(`https://your-proxy.com/github?user=${kuttu101996}`);
+        },
+      });
+    </script>
+  </body>
+  <script src="index.js"></script>
 </html>

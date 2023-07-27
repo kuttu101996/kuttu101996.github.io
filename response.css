@@ -69,17 +69,17 @@
   #burger {
     display: block;
   }
-  #resume-link-1{
+  #resume-link-1 {
     background: transparent;
     padding: 0;
   }
-  #resume-link-1:hover{
+  #resume-link-1:hover {
     background: transparent;
   }
-  #toggle_navPageFull{
+  #toggle_navPageFull {
     height: 100vh;
   }
-  #toggle_navPageHalf{
+  #toggle_navPageHalf {
     height: 100vh;
   }
   #home {
@@ -121,44 +121,50 @@
     width: 140px;
   }
 
-  #about{
+  #about {
     max-width: 100%;
-    height: 100%;
+    height: 160vh;
   }
-  .about_top{
+  .about_top {
     flex-direction: column;
     width: 80%;
     align-items: center;
     justify-content: center;
   }
-  .about_top_left, .about_top_right{
+  .about_top_left,
+  .about_top_right {
     width: 80%;
     align-items: center;
     justify-content: center;
   }
-  #intro{
+  #intro {
     display: block;
     margin-bottom: 30px;
   }
-  #user-detail-intro{
+  #user-detail-intro {
     display: none;
   }
-  #top-lang-img{
+  #github-top-langs {
+    margin-left: -24px;
+    width: 129%;
+  }
+  #github-stats-card {
+    width: 110%;
+  }
+  #github-streak-stats {
+    width: 110%;
+  }
+  #git-readme {
     width: 300px;
   }
-  #git-stat-card{
-    width: 300px;
-  }
-  #git-readme{
-    width: 300px;
-  }
-  .about_bottom{
+  .about_bottom {
     width: 80%;
     overflow: hidden;
     margin: auto;
   }
-  .about_bottom  .calendar{
-    left: -449px;
+  .about_bottom .calendar {
+    /* left: -449px; */
+    width: 100%;
   }
   /* .border .js-calendar-graph .js-calendar-graph-svg g g:nth-child(1) 
   {
@@ -166,22 +172,22 @@
   } */
 
   /* Skills Section */
-  #skills{
+  #skills {
     width: 95%;
     margin: auto;
     height: 100%;
     margin-top: -200px;
   }
-  #skills .secHead{
+  #skills .secHead {
     margin-bottom: 30px;
   }
-  .skill_main{
+  .skill_main {
     width: 80%;
     margin: auto;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
   }
-  .skill_icons{
+  .skill_icons {
     width: 65%;
     margin: auto;
     display: flex;
@@ -189,97 +195,97 @@
     align-items: center;
     justify-content: center;
   }
-  .skill_icons h3{
+  .skill_icons h3 {
     margin-top: 10px;
-      text-align: center;
-      color: #2f7b90;
-      font-size: 15px;
+    text-align: center;
+    color: #2f7b90;
+    font-size: 15px;
   }
 
   /* Project Section */
-  #projects{
+  #projects {
     max-width: 100%;
     height: 100%;
   }
-  .secHead_proj{
+  .secHead_proj {
     font-size: 29px;
   }
-  .project_main{
+  .project_main {
     width: 85%;
     margin: auto;
   }
-  .project-card{
+  .project-card {
     width: 90%;
     margin: auto;
     height: 100%;
     flex-direction: column;
     margin-bottom: 40px;
   }
-  .project-card .left{
+  .project-card .left {
     position: relative;
     /* width: 320px; */
     /* height: 220px; */
-    transition: .6s ease;
+    transition: 0.6s ease;
     width: 95%;
     margin-bottom: 10px;
-  } 
-  .project-card .left:hover{
+  }
+  .project-card .left:hover {
     z-index: 9;
-    transition: .4s ease;
+    transition: 0.4s ease;
     transform: scaleX(1.2) scaleY(1.1);
     margin-bottom: 20px;
   }
-  .project-card .overlay{
-      width: 95%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+  .project-card .overlay {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  .project-title{
+  .project-title {
     text-align: center;
   }
-  .project-description{
+  .project-description {
     text-align: center;
   }
-  .project-tech-stack{
+  .project-tech-stack {
     width: 90%;
     height: 40px;
     justify-content: center;
   }
-  .proj_link_div{
-      width: 75%;
-      justify-content: center;
+  .proj_link_div {
+    width: 75%;
+    justify-content: center;
   }
-  .proj_links{
-      padding: 5px 12px;
-      margin-right: 8px;
+  .proj_links {
+    padding: 5px 12px;
+    margin-right: 8px;
   }
-  .proj_links span{
+  .proj_links span {
     font-size: 14px;
-      margin-left: 5px;
+    margin-left: 5px;
   }
-  .fa-github{
-      font-size: 21px;
+  .fa-github {
+    font-size: 21px;
   }
-  .fa-globe{
-      font-size: 19px;
+  .fa-globe {
+    font-size: 19px;
   }
 
   /* Contact Section */
-  #contact{
+  #contact {
     max-width: 100%;
   }
-  .contact_main{
+  .contact_main {
     width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  .contact-left{
-    width: 70%;
+  .contact-left {
+    width: 75%;
   }
-  .responsive_social{
+  .responsive_social {
     display: block;
     position: relative;
     width: 10%;
@@ -289,7 +295,7 @@
     justify-content: center;
     transition: 0.6s ease;
   }
-  .responsive_social div:nth-child(1){
+  .responsive_social div:nth-child(1) {
     width: 50%;
     height: 100%;
     display: flex;
@@ -297,13 +303,13 @@
     justify-content: center;
     white-space: nowrap;
   }
-  .social{
+  .social {
     position: relative;
     transform: rotate(-90deg);
-    color: #008CBA;
+    color: #008cba;
     display: block;
   }
-  .arrow{
+  .arrow {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -318,49 +324,49 @@
     transition: 0.5s ease-in-out;
     cursor: pointer;
   }
-  #link_icons_container{
+  #link_icons_container {
     width: 100%;
     margin-top: 10px;
   }
-  #link_icons_container div{
+  #link_icons_container div {
     width: 100%;
     position: relative;
     margin-right: 0;
   }
-  #link_icons_container div img{
+  #link_icons_container div img {
     width: 100%;
     margin-right: 0;
   }
-  .contact-right{
+  .contact-right {
     display: none;
   }
-  #link_icons_container .social_links{
+  #link_icons_container .social_links {
     margin: 5px;
   }
-  #link_icons_container .social_links div{
+  #link_icons_container .social_links div {
     padding: 0;
     font-size: 35px;
     background-color: transparent;
   }
-  .arrow span{
-    color: #008CBA;
+  .arrow span {
+    color: #008cba;
   }
-.responsive_mail span{
-  font-size: 32px;
-}
-  #contact-phone i{
+  .responsive_mail span {
+    font-size: 32px;
+  }
+  #contact-phone i {
     font-size: 27px;
   }
-  #contact-github div{
+  #contact-github div {
     width: 90%;
     margin-left: 2px;
   }
-  .contact-left form .submit{
+  .contact-left form .submit {
     width: 100px;
-    background-color: #008CBA;
-    border: 1px solid #008CBA;
+    background-color: #008cba;
+    border: 1px solid #008cba;
     cursor: pointer;
-    transition: .3s;
+    transition: 0.3s;
     font-size: 18px;
     font-weight: 600;
     /* padding: 5px 10px; */
