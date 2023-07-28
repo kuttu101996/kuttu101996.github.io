@@ -189,7 +189,7 @@ button {
 
 /* Home Css start */
 #home {
-  width: 92%;
+  width: 90%;
   margin: auto;
   padding-top: 40px;
   display: flex;
@@ -279,7 +279,7 @@ button {
 /* About Section */
 #about {
   padding-top: 90px;
-  height: 180vh;
+  height: 130vh;
   /* position: relative; */
 }
 #about .secHead {
@@ -350,12 +350,11 @@ button {
   /* border-left: 0px; */
 }
 .text-muted {
-  font-size: 12px;
+  font-size: 15px;
   color: #ccc;
 }
 .contrib-number {
   color: #008cba;
-  font-size: 15px;
   font-weight: 600;
 }
 .js-calendar-graph-svg .ContributionCalendar-label {
@@ -364,6 +363,7 @@ button {
 
 /* Skills Section */
 #skills {
+  height: 110vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -496,7 +496,7 @@ button {
 
 /* Contact */
 #contact {
-  height: 75vh;
+  height: 85vh;
   display: flex;
   flex-direction: column;
 }
@@ -516,7 +516,7 @@ button {
   flex-direction: column;
 }
 .contact-left .inputs {
-  width: 100%;
+  width: 90%;
   background-color: transparent;
   border: 1px solid #7c8188;
   border-top: 0px;

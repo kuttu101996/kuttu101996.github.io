@@ -43,8 +43,8 @@
     font-size: 1rem;
   }
   #home {
-    padding-top: 35px;
-    width: 96%;
+    padding-top: 45px;
+    width: 97%;
   }
   .home_left {
     width: 60%;
@@ -53,7 +53,7 @@
     width: 85%;
   }
   .home_right {
-    width: 35%;
+    width: 39%;
   }
 }
 @media (max-width: 760px) {
@@ -165,6 +165,15 @@
   .about_bottom .calendar {
     /* left: -449px; */
     width: 100%;
+  }
+  .text-muted {
+    font-size: 11px;
+    color: #ccc;
+  }
+  .contrib-number {
+    color: #008cba;
+    font-size: 16px;
+    font-weight: 600;
   }
   /* .border .js-calendar-graph .js-calendar-graph-svg g g:nth-child(1) 
   {
@@ -284,6 +293,9 @@
   }
   .contact-left {
     width: 75%;
+  }
+  .contact-left .inputs {
+    width: 100%;
   }
   .responsive_social {
     display: block;
