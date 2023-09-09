@@ -263,9 +263,10 @@ button {
 .home_right {
   position: relative;
   width: 32%;
-  height: 350px;
+  /* height: 350px; */
   overflow: hidden;
-  border-radius: 1.5rem;
+  border-radius: 50%;
+  /* border-radius: 1.5rem; */
 }
 .home_right img {
   width: 100%;
@@ -574,38 +575,56 @@ input::-webkit-inner-spin-button {
   position: relative;
   display: flex;
   flex-direction: column;
-}
-.social_links {
-  margin: 8px 0;
-  width: 100%;
-}
-.social_links div {
   background-color: #7c818842;
-  padding: 7px 20px;
-  width: 100%;
-  font-size: 20px;
-  font-weight: 600;
-  /* border: 1px solid #7c8188; */
+  border-radius: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.contact-right h2 {
+  color: #008cba;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+.social_links .link_div {
+  padding: 5px 20px;
+  /* width: 100%; */
+  font-size: 18px;
+  font-weight: 400;
   border-radius: 6px;
   transition: 0.2s;
   color: rgba(255, 255, 255, 0.945);
   text-align: center;
   display: flex;
-  width: 100%;
   align-items: center;
   justify-content: center;
 }
 .githubImg {
-  width: 9%;
+  width: 60%;
   border-radius: 8px;
-  margin-right: 9px;
 }
 .linkedinImg {
-  width: 11%;
+  width: 60%;
   border-radius: 8px;
-  margin-right: 5px;
 }
-.social_links div:hover {
+.wp img {
+  width: 60%;
+}
+.social_icons {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  /* justify-content: center; */
+}
+.social_icons div {
+  width: 100%;
+  transition: .2s;
+}
+.social_icons div:hover{
+  transform: .2s;
+  transform: scale(1.1);
+}
+.social_links .link_div:hover {
   transition: 0.1s;
   background-color: #292e38;
 }
