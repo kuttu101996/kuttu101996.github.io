@@ -57,6 +57,13 @@
   }
 }
 @media (max-width: 760px) {
+  html::-webkit-scrollbar-thumb {
+    background: rgb(128, 128, 128);
+    border-radius: 8px;
+  }
+  html::-webkit-scrollbar-thumb:hover {
+    background: rgb(176, 176, 176);
+  }
   #nav-menu {
     position: fixed;
     height: 55px;
@@ -82,6 +89,9 @@
   #toggle_navPageHalf {
     height: 100vh;
   }
+
+  /* ==================== HOME START ==================== */
+
   #home {
     max-width: 100%;
     flex-direction: column;
@@ -120,6 +130,10 @@
     justify-content: space-between;
     width: 140px;
   }
+
+  /* ==================== HOME END ==================== */
+
+  /* ==================== ABOUT START ==================== */
 
   #about {
     max-width: 100%;
@@ -175,12 +189,16 @@
     font-size: 16px;
     font-weight: 600;
   }
+
+  /* ==================== ABOUT END ==================== */
+
   /* .border .js-calendar-graph .js-calendar-graph-svg g g:nth-child(1) 
   {
     display: none;
   } */
 
-  /* Skills Section */
+  /* ==================== SKILL START ==================== */
+
   #skills {
     width: 95%;
     margin: auto;
@@ -211,8 +229,11 @@
     font-size: 15px;
   }
 
-  /* Project Section */
-  #projects {
+  /* ==================== SKILL END ==================== */
+
+  /* ==================== PROJECT START ==================== */
+
+  /* #projects {
     max-width: 100%;
     height: 100%;
   }
@@ -232,8 +253,6 @@
   }
   .project-card .left {
     position: relative;
-    /* width: 320px; */
-    /* height: 220px; */
     transition: 0.6s ease;
     width: 95%;
     margin-bottom: 10px;
@@ -279,9 +298,87 @@
   }
   .fa-globe {
     font-size: 19px;
+  } */
+
+  .projectWraper {
+    width: 85%;
+    flex-direction: column;
+    position: unset;
+    margin-bottom: 40px;
+  }
+  .picDiv {
+    width: 100%;
+    position: unset;
+  }
+  .picDiv img {
+    /* position: relative; */
+    border-radius: 0rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .picDiv img:hover {
+    transition: unset;
+    transform: unset;
+  }
+  .picDiv:hover + .detailDiv .detailWraper .actualDetailDiv {
+    transform: unset;
+    transition: unset;
+  }
+  .detailDiv {
+    justify-content: center;
+  }
+  .detailWraper {
+    width: 100%;
+    min-height: 0px;
+    background-color: #7c818842;
+    justify-content: center;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 15px;
+  }
+  .actualDetailDiv {
+    transition: unset;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .actualDetailDiv h1{
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+  .actualDetailDiv .projDetail .theProjIs {
+    font-size: small;
+    margin-bottom: 5px;
+  }
+  .actualDetailDiv .projDetail .createdBy {
+    margin-bottom: 10px;
+    font-size: x-small;
+  }
+  .techStackWraper {
+    width: 90%;
+  }
+  .techStackWraper img {
+    margin-right: 10px;
+  }
+  .projLinksWraper .proj_links {
+    position: relative;
+    padding: 8px;
+    font-size: smaller;
+    background-color: #222a36;
+    border-radius: 6px;
+    margin-right: 3px;
+    transition: 0.2s ease-in-out;
+  }
+  .projLinksWraper .proj_links:hover {
+    transition: 0.2s ease-in-out;
+  }
+  .projLinksWraper .proj_links span {
+    margin-left: 5px;
   }
 
-  /* Contact Section */
+  /* ==================== PROJECT END ==================== */
+
+  /* ==================== CONTACT START ==================== */
+
   #contact {
     max-width: 100%;
   }
@@ -385,4 +482,6 @@
     letter-spacing: 2px;
     color: rgba(255, 255, 255, 0.74);
   }
+
+  /* ==================== CONTACT END ==================== */
 }
