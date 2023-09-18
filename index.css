@@ -25,6 +25,7 @@
   color: white;
   letter-spacing: 1px;
   font-family: "Poppins", sans-serif;
+  font-family: "Source Code Pro", monospace;
 }
 body {
   width: 100%;
@@ -220,7 +221,6 @@ button {
   word-spacing: 0;
   letter-spacing: 0;
   color: #cae1db;
-  font-family: "Source Code Pro", monospace;
   line-height: 2rem;
   font-size: 18px;
 }
@@ -298,6 +298,9 @@ button {
   margin: auto;
   margin-bottom: 30px;
 }
+#about_intro{
+  display: none;
+}
 #intro {
   display: none;
 }
@@ -335,7 +338,7 @@ button {
   margin-top: 15px;
 }
 #github-stats-card {
-  /* width: 100%; */
+  width: 100%;
   text-align: center;
   background-color: transparent;
 }
@@ -590,7 +593,7 @@ input::-webkit-inner-spin-button {
 }
 .social_links .link_div {
   padding: 5px 20px;
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 400;
   border-radius: 6px;
   transition: 0.2s;

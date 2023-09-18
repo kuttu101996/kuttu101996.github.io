@@ -19,7 +19,7 @@
     width: 35%;
   }
 }
-@media (max-width: 960px) and (min-width: 761px) {
+@media (max-width: 1000px) and (min-width: 761px) {
   #nav-menu {
     height: 60px;
     padding: 5px 25px;
@@ -44,16 +44,152 @@
   }
   #home {
     padding-top: 45px;
-    width: 97%;
+    width: 96%;
   }
   .home_left {
     width: 60%;
   }
   .home_left p {
     width: 85%;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.5rem;
+  }
+  .home_left #resume-button-2 {
+    font-size: 15px;
+    width: 110px;
+    padding: 4px 7px;
   }
   .home_right {
     width: 39%;
+  }
+  .about_top {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #about_intro {
+    display: block;
+    margin-bottom: 20px;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #about_intro div:nth-child(1) {
+    width: 55%;
+  }
+  #about_intro div:nth-child(2) {
+    width: 35%;
+  }
+  #about_intro div img {
+    width: 100%;
+    border-radius: 1rem;
+  }
+  .about_top_left,
+  .about_top_right {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .about_top_left {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+  }
+  .about_top_left div:nth-child(1) {
+    width: 40%;
+  }
+  .about_top_left div:nth-child(2) {
+    width: 52%;
+  }
+  #user-detail-intro {
+    display: none;
+    width: 0;
+  }
+  #github-top-langs {
+    width: 100%;
+  }
+  #github-stats-card {
+    width: 100%;
+  }
+  .about_top_right_ch2 {
+    width: 100%;
+  }
+  #github-streak-stats {
+    width: 100%;
+    margin-top: 0;
+  }
+  #user-detail-intro {
+    text-align: justify;
+    font-size: 15px;
+  }
+  /* About End */
+
+  /* Skill Start */
+  #skills {
+    width: 95%;
+    margin: auto;
+    height: 100%;
+  }
+  #skills .secHead {
+    margin-bottom: 30px;
+  }
+  .skill_main {
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  .skill_icons {
+    width: 65%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .skill_icons h3 {
+    margin-top: 10px;
+    text-align: center;
+    color: #2f7b90;
+    font-size: 15px;
+  }
+  /* Skill End */
+
+  /* Project Start */
+  .project_main {
+    width: 90%;
+    margin: auto;
+  }
+  .projectWraper {
+    width: 100%;
+  }
+  .detailWraper .actualDetailDiv {
+    font-size: 12px;
+    width: 72%;
+  }
+  .picDiv {
+    width: 45%;
+  }
+  .detailWraper {
+    padding: 14px;
+    min-height: 200px;
+  }
+  .projLinksWraper .proj_links {
+    padding: 7px;
+    margin-right: 6px;
+  }
+  /* Project End */
+
+  /* Contact Start */
+  .contact_main {
+    width: 83%;
+  }
+  .contact-right {
+    width: 48%;
   }
 }
 @media (max-width: 760px) {
@@ -341,7 +477,7 @@
     padding: 20px;
     border-radius: 10px;
   }
-  .actualDetailDiv h1{
+  .actualDetailDiv h1 {
     font-size: 22px;
     margin-bottom: 5px;
   }
