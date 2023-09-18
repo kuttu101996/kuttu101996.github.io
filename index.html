@@ -53,7 +53,6 @@
           <a
             class="nav_btns nav-link resume resumeBtn"
             id="resume-link-1"
-            onclick="dis()"
             href="https://drive.google.com/file/d/1xk-x9ZUSZVS-xquYrX4fo6eVs1Vn0Bo_/view?usp=sharing"
             target="_blank"
           >
@@ -65,27 +64,26 @@
       <div id="toggle_navPageFull" class="toggle_navPageFull">
         <div id="toggle_navPageHalf" class="toggle_navPageHalf">
           <div class="toggle_navPage_links">
-            <a class="" href="#home" onclick="clo()">Home</a>
+            <a href="#home" onclick="clo()">Home</a>
           </div>
           <div class="toggle_navPage_links">
-            <a class="" href="#about" onclick="clo()">About</a>
+            <a href="#about" onclick="clo()">About</a>
           </div>
           <div class="toggle_navPage_links">
-            <a class="" href="#skills" onclick="clo()">Skills</a>
+            <a href="#skills" onclick="clo()">Skills</a>
           </div>
           <div class="toggle_navPage_links">
-            <a class="" href="#projects" onclick="clo()">Projects</a>
+            <a href="#projects" onclick="clo()">Projects</a>
           </div>
           <div class="toggle_navPage_links">
-            <a class="" href="#contact" onclick="clo()">Contact</a>
+            <a href="#contact" onclick="clo()">Contact</a>
           </div>
           <div class="toggle_navPage_links">
             <a
-              class=""
-              id="resume-link-1"
-              href="./pdf/Snehasish-Dastidar-resume.pdf"
-              download=""
-              ><span id="resume-button-1">Resume</span
+              id="resume-link-1-res"
+              href="https://drive.google.com/file/d/1xk-x9ZUSZVS-xquYrX4fo6eVs1Vn0Bo_/view?usp=sharing"
+              target="_blank"
+              ><span id="resume-button-1-res">Resume</span
               ><span class="material-symbols-outlined"> download </span>
             </a>
           </div>
@@ -97,11 +95,6 @@
         </div>
       </div>
       <div id="particles-js"></div>
-      <a
-        id="resume-link-1-2"
-        href="https://drive.google.com/uc?export=download&id=1xk-x9ZUSZVS-xquYrX4fo6eVs1Vn0Bo_"
-        download=""
-      ></a>
       <div id="home" class="section">
         <div class="home_left">
           <!-- Namaste -->
@@ -810,12 +803,34 @@
   </body>
   <script src="index.js"></script>
   <script>
-    document.getElementById("resume-link-1").addEventListener("click", () => {
-      document.getElementById("resume-link-1-2").click();
-    });
-    document.getElementById("resume-button-2").addEventListener("click", () => {
-      document.getElementById("resume-link-1-2").click();
-    });
+    // document.getElementById("resume-link-1").addEventListener("click", () => {
+    //   document.getElementById("resume-link-1-2").click();
+    // });
+    // document.getElementById("resume-button-2").addEventListener("click", () => {
+    //   document.getElementById("resume-link-1-2").click();
+    // });
+
+    function handleClick() {
+      var fileID = "1xk-x9ZUSZVS-xquYrX4fo6eVs1Vn0Bo_";
+      var downloadURL =
+        "https://drive.google.com/uc?export=download&id=" + fileID;
+
+      var downloadLink = document.createElement("a");
+      downloadLink.href = downloadURL;
+      downloadLink.target = "_blank"; // Open in a new tab
+      downloadLink.download = "Snehasish.Ghosh.Dastidar.resume.pdf"; // Specify the desired file name
+      downloadLink.click();
+    }
+
+    document
+      .getElementById("resume-link-1")
+      .addEventListener("click", handleClick);
+    document
+      .getElementById("resume-link-1-res")
+      .addEventListener("click", handleClick);
+    document
+      .getElementById("resume-button-2")
+      .addEventListener("click", handleClick);
 
     // line - 451, 453, 463, 509, 558, 604
   </script>

@@ -185,6 +185,11 @@ button {
   border-right: 0;
   border-top: 0;
 }
+#resume-link-1-res{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 /* Home Css start */
 #home {
@@ -222,7 +227,7 @@ button {
 .home_left .mob_none {
   color: #cae1db;
 }
-.home_left #resume-button-2-mobile {
+/* .home_left #resume-button-2-mobile {
   width: 150px;
   display: none;
   position: relative;
@@ -239,8 +244,8 @@ button {
 .home_left #resume-button-2-mobile:hover {
   transition: 0.1s;
   background-color: #005c7a;
-}
-.home_left #resume-link-2 {
+} */
+.home_left #resume-button-2 {
   width: 150px;
   position: relative;
   color: rgba(255, 255, 255, 0.74);
@@ -253,10 +258,10 @@ button {
   align-items: center;
   justify-content: space-between;
 }
-.home_left #resume-link-2 span {
+.home_left #resume-button-2 span {
   color: rgba(255, 255, 255, 0.74);
 }
-.home_left #resume-link-2:hover {
+.home_left #resume-button-2:hover {
   transition: 0.1s;
   background-color: #005c7a;
 }
@@ -273,9 +278,9 @@ button {
   height: 100%;
   transition: 0.6s;
 }
-.home_right img:hover {
+/* .home_right img:hover {
   transform: scale(1.2);
-}
+} */
 
 /* About Section */
 #about {
