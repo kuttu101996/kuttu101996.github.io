@@ -49,7 +49,7 @@
           <a class="nav_btns nav-link about" href="#about">About</a>
           <a class="nav_btns nav-link skills" href="#skills">Skills</a>
           <a class="nav_btns nav-link projects" href="#projects">Projects</a>
-          <a class="nav_btns nav-link contact" href="#contact">Contact</a>
+          <a class="nav_btns nav-link contact" href="#contact" id="navContact">Contact</a>
           <a
             class="nav_btns nav-link resume resumeBtn"
             id="resume-link-1"
@@ -654,32 +654,36 @@
         <h1 class="secHead">CONTACT</h1>
         <div class="contact_main">
           <div class="contact-left">
-            <form>
+            <form id="msgForm">
               <input
                 class="inputs"
                 type="text"
                 placeholder="Your Name"
+                id="userName"
                 required
               />
               <input
                 class="inputs"
                 type="email"
                 placeholder="Your Email"
+                id="userEmail"
                 required
               />
               <input
                 class="inputs"
                 type="number"
                 placeholder="Your Mobile"
-                required
+                id="userMobile"
               />
               <textarea
                 class="inputs"
                 placeholder="Your Message Here"
                 cols="50"
                 rows="4"
+                id="msgContent"
+                required
               ></textarea>
-              <input class="inputs submit" type="submit" value="SEND" />
+              <button class="inputs submit" type="submit">SEND</button>
             </form>
           </div>
           <div id="responsive_social" class="responsive_social">
@@ -820,6 +824,10 @@
   </body>
   <script src="index.js"></script>
   <script>
+    const navContact = document.getElementById("navContact")
+    navContact.addEventListener("click", ()=> {
+      alert(`Try sending message on contact section.`)
+    })
     // document.getElementById("resume-link-1").addEventListener("click", () => {
     //   document.getElementById("resume-link-1-2").click();
     // });
