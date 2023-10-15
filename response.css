@@ -18,7 +18,7 @@
   .home_right {
     width: 35%;
   }
-  .skill_main{
+  .skill_main {
     width: 80%;
   }
 }
@@ -232,7 +232,6 @@
     flex-direction: column;
     justify-content: space-around;
     padding-top: 55px;
-    height: 100vh;
   }
   .home_left {
     text-align: left;
@@ -251,8 +250,8 @@
     display: none;
   }
   .home_right {
-    width: 300px;
-    height: 300px;
+    width: 60%;
+    /* height: 300px; */
     margin-top: 10px;
     border-radius: 50%;
   }
@@ -338,19 +337,20 @@
     width: 95%;
     margin: auto;
     height: 100%;
-    margin-top: -200px;
+    margin-top: -100px;
   }
   #skills .secHead {
     margin-bottom: 30px;
   }
   .skill_main {
-    width: 80%;
+    width: 75%;
     margin: auto;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    gap: 20px;
   }
   .skill_icons {
-    width: 65%;
+    width: 80%;
+    padding: 28px 28px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -361,7 +361,7 @@
     margin-top: 10px;
     text-align: center;
     color: #2f7b90;
-    font-size: 15px;
+    font-size: 14px;
   }
 
   /* ==================== SKILL END ==================== */
@@ -619,4 +619,58 @@
   }
 
   /* ==================== CONTACT END ==================== */
+}
+@media (max-width: 500px) {
+  .secHead {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  #skills {
+    margin-top: -200px;
+  }
+  .skill_main {
+    width: 75%;
+    gap: 20px;
+  }
+  .skill_icons {
+    width: 95%;
+    padding: 15px 15px;
+  }
+  .skill_icons h3 {
+    font-size: 10px;
+  }
+}
+@media (max-width: 330px) {
+  .secHead {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  #skills {
+    margin-top: -350px;
+  }
+  .skill_main {
+    width: 85%;
+    gap: 10px;
+  }
+  .skill_icons {
+    width: 95%;
+    padding: 15px 15px;
+  }
+  .skill_icons h3 {
+    font-size: 10px;
+  }
+  .actualDetailDiv .project-title {
+    font-size: 15px;
+  }
+  .actualDetailDiv .projDetail .project-description {
+    font-size: 12px;
+  }
+  .projLinksWraper .proj_links {
+    padding: 8px;
+    margin-right: 1px;
+    font-size: 10px;
+  }
+  .projLinksWraper .proj_links span {
+    margin-left: 3px;
+  }
 }
